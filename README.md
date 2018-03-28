@@ -9,6 +9,7 @@ npm install
 ```
 
 to install all the packages.
+<br />
 To run the application:
 
 ```
