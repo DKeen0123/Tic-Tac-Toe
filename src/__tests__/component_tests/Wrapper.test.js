@@ -16,4 +16,8 @@ describe('Wrapper', () => {
   it('renders a PlayerTurn component', () => {
     expect(wrapper.find('PlayerTurn').exists()).toBe(true);
   });
+
+  it('initializes `playerOneTurn` state as true', () => {
+    expect(wrapper.state('playerOneTurn')).toEqual(true);
+  });
 });
