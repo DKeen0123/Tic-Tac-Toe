@@ -4,7 +4,7 @@ import Box from './Box';
 const Arena = props => {
   return (
     <div>
-      <Box onClick={props.handlePlayerMove} />
+      <Box handlePlayerMove={props.handlePlayerMove} />
     </div>
   );
 };

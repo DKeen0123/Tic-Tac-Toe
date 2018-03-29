@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Box = () => {
+const Box = props => {
   return (
     <div>
-      <button />
+      <button onClick={props.handlePlayerMove} />
     </div>
   );
 };
