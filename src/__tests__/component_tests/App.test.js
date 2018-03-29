@@ -8,4 +8,8 @@ describe('App', () => {
   it('renders correctly', () => {
     expect(app).toMatchSnapshot();
   });
+
+  it('renders a header component', () => {
+    expect(app.find('Header').exists()).toBe(true);
+  });
 });
