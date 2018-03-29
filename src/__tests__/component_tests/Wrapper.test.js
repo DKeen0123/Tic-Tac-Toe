@@ -25,6 +25,13 @@ describe('Wrapper', () => {
     expect(wrapper.state('playerOneTurn')).toEqual(true);
   });
 
+  describe('`handlePlayerMove()`', () => {
+    it('changes `playerOneTurn` state to false', () => {
+      wrapper.instance().handlePlayerMove();
+      expect(wrapper.state('playerOneTurn')).toEqual(false);
+    });
+  });
+
   describe('passing props', () => {
     it('passes the handlePlayerMove prop down to Arena', () => {
       expect(wrapper.find('Arena').prop('handlePlayerMove')).toEqual(
