@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Wrapper from '../../components/PlayerTurn';
+import PlayerTurn from '../../components/PlayerTurn';
 
 describe('PlayerTurn', () => {
   const playerTurn = shallow(<PlayerTurn />);
