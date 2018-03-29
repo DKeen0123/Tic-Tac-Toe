@@ -27,7 +27,7 @@ describe('Wrapper', () => {
     });
 
     it('initializes `boxes` state as an array of 9 Boxes', () => {
-      expect(wrapper.state('boxes').contains(<Box />));
+      expect(wrapper.state('boxes').length).toBe(9);
     });
   });
 
