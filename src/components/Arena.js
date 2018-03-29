@@ -1,10 +1,10 @@
 import React from 'react';
 import Box from './Box';
 
-const Arena = () => {
+const Arena = props => {
   return (
     <div>
-      <Box />
+      <Box onClick={props.handlePlayerMove} />
     </div>
   );
 };
