@@ -52,12 +52,6 @@ describe('Wrapper', () => {
   });
 
   describe('passing props', () => {
-    it('passes the handlePlayerMove function down to Arena', () => {
-      expect(wrapper.find('Arena').prop('handlePlayerMove')).toEqual(
-        wrapper.instance().handlePlayerMove
-      );
-    });
-
     it('passes the boxes state down to Arena', () => {
       expect(wrapper.find('Arena').prop('boxes')).toEqual(
         wrapper.state('boxes')

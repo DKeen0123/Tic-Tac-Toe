@@ -4,7 +4,7 @@ import Box from './Box';
 const Arena = props => {
   return (
     <div>
-      <Box handlePlayerMove={props.handlePlayerMove} boxes={props.boxes} />
+      <Box boxes={props.boxes} />
     </div>
   );
 };

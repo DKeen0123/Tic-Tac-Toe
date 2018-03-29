@@ -15,14 +15,4 @@ describe('Arena', () => {
   it('renders a Box component', () => {
     expect(arena.find('Box').exists()).toBe(true);
   });
-
-  it('passes `handlePlayerMove()` down to Box as props', () => {
-    expect(arena.find('Box').prop('handlePlayerMove')).toEqual(
-      mockHandlePlayerMove
-    );
-  });
-
-  it('passes the boxes state down to Box', () => {
-    expect(arena.find('Box').prop('boxes')).toEqual(mockBoxes);
-  });
 });

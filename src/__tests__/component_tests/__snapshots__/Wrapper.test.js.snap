@@ -23,18 +23,35 @@ ShallowWrapper {
         <Arena
           boxes={
                     Array [
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
+                              <Box
+                                handlePlayerMove={[Function]}
+                    />,
                             ]
           }
-          handlePlayerMove={[Function]}
 />,
       ],
     },
@@ -64,17 +81,34 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "boxes": Array [
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
+            <Box
+              handlePlayerMove={[Function]}
+/>,
           ],
-          "handlePlayerMove": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -95,18 +129,35 @@ ShallowWrapper {
           <Arena
             boxes={
                         Array [
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
+                                    <Box
+                                      handlePlayerMove={[Function]}
+                        />,
                                   ]
             }
-            handlePlayerMove={[Function]}
 />,
         ],
       },
@@ -136,17 +187,34 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "boxes": Array [
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
+              <Box
+                handlePlayerMove={[Function]}
+/>,
             ],
-            "handlePlayerMove": [Function],
           },
           "ref": null,
           "rendered": null,

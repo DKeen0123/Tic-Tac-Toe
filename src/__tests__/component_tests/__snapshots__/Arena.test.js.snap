@@ -32,7 +32,6 @@ ShallowWrapper {
                         "box",
                       ]
         }
-        handlePlayerMove={[Function]}
 />,
     },
     "ref": null,
@@ -45,7 +44,6 @@ ShallowWrapper {
           "box",
           "box",
         ],
-        "handlePlayerMove": [Function],
       },
       "ref": null,
       "rendered": null,
@@ -66,7 +64,6 @@ ShallowWrapper {
                               "box",
                             ]
           }
-          handlePlayerMove={[Function]}
 />,
       },
       "ref": null,
@@ -79,7 +76,6 @@ ShallowWrapper {
             "box",
             "box",
           ],
-          "handlePlayerMove": [Function],
         },
         "ref": null,
         "rendered": null,

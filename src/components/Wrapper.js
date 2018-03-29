@@ -17,7 +17,7 @@ class Wrapper extends Component {
     this.populateBoxes();
   }
 
-  populateBoxes(item = <Box />) {
+  populateBoxes(item = <Box handlePlayerMove={this.handlePlayerMove} />) {
     let { boxes } = this.state;
     for (var i = 0; i < 9; i++) {
       boxes.push(item);
@@ -35,10 +35,7 @@ class Wrapper extends Component {
       <div>
         <Header />
         <PlayerTurn />
-        <Arena
-          handlePlayerMove={this.handlePlayerMove}
-          boxes={this.state.boxes}
-        />
+        <Arena boxes={this.state.boxes} />
       </div>
     );
   }
