@@ -9,7 +9,11 @@ describe('Wrapper', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('renders a header component', () => {
+  it('renders a Header component', () => {
     expect(wrapper.find('Header').exists()).toBe(true);
+  });
+
+  it('renders a PlayerTurn component', () => {
+    expect(wrapper.find('PlayerTurn').exists()).toBe(true);
   });
 });
