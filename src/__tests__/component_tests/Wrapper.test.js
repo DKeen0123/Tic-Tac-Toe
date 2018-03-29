@@ -3,7 +3,9 @@ import { shallow } from 'enzyme';
 import Wrapper from '../../components/Wrapper';
 
 describe('Wrapper', () => {
-  const wrapper = shallow(<Wrapper />);
+  const mockHandlePlayerMove = jest.fn();
+  const props = { handlePlayerMove: mockHandlePlayerMove };
+  let wrapper = shallow(<Wrapper {...props} />);
 
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
@@ -23,5 +25,13 @@ describe('Wrapper', () => {
 
   it('initializes `playerOneTurn` state as true', () => {
     expect(wrapper.state('playerOneTurn')).toEqual(true);
+  });
+
+  describe('passing props', () => {
+    it('passes the handlePlayerMove prop down to Arena', () => {
+      expect(wrapper.find('Arena').prop('handlePlayerMove')).toEqual(
+        mockHandlePlayerMove
+      );
+    });
   });
 });
