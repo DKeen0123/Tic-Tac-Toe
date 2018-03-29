@@ -6,6 +6,6 @@ describe('Header', () => {
   const header = shallow(<Header />);
 
   it('renders correctly', () => {
-    expect(app).toMatchSnapshot();
+    expect(header).toMatchSnapshot();
   });
 });
