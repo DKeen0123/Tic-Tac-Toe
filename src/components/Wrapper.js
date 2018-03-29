@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import PlayerTurn from './PlayerTurn';
+import Arena from './Arena';
 
 class Wrapper extends Component {
   constructor() {
@@ -14,6 +15,7 @@ class Wrapper extends Component {
       <div>
         <Header />
         <PlayerTurn />
+        <Arena />
       </div>
     );
   }

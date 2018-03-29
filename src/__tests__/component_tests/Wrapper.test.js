@@ -17,6 +17,10 @@ describe('Wrapper', () => {
     expect(wrapper.find('PlayerTurn').exists()).toBe(true);
   });
 
+  it('renders an Arena component', () => {
+    expect(wrapper.find('Arena').exists()).toBe(true);
+  });
+
   it('initializes `playerOneTurn` state as true', () => {
     expect(wrapper.state('playerOneTurn')).toEqual(true);
   });
