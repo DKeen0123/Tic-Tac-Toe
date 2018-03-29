@@ -21,6 +21,19 @@ describe('Wrapper', () => {
     expect(wrapper.find('Arena').exists()).toBe(true);
   });
 
+  describe('populateBoxes()', () => {
+    it('populates boxes array with 9 of whatever is passed in', () => {
+      wrapper.instance().populateBoxes('box');
+      expect(wrapper.state('boxes')).toContain('box');
+    });
+  });
+
+  // describe('componentDidMount', () = {
+  //   it('populates boxes array with 9 instances of Box', () => {
+  //
+  //   } )
+  // })
+
   describe('state', () => {
     it('initializes `playerOneTurn` state as true', () => {
       expect(wrapper.state('playerOneTurn')).toEqual(true);
