@@ -9,7 +9,7 @@ describe('App', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('renders a header component', () => {
-    expect(app.find('Header').exists()).toBe(true);
+  it('renders a wrapper component', () => {
+    expect(app.find('Wrapper').exists()).toBe(true);
   });
 });

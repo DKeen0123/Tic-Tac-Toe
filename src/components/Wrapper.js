@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class Wrapper extends Component {
   render() {
     return (
       <div>
-        <h1>Wrapper</h1>
+        <Header />
       </div>
     );
   }
