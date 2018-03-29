@@ -13,6 +13,9 @@ class Wrapper extends Component {
       boxes: []
     };
   }
+  componentWillMount() {
+    this.populateBoxes();
+  }
 
   populateBoxes(item = <Box />) {
     let { boxes } = this.state;
