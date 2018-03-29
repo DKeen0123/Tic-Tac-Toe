@@ -21,21 +21,20 @@ describe('Wrapper', () => {
     expect(wrapper.find('Arena').exists()).toBe(true);
   });
 
-  it('initializes `playerOneTurn` state as true', () => {
-    expect(wrapper.state('playerOneTurn')).toEqual(true);
+  describe('state', () => {
+    it('initializes `playerOneTurn` state as true', () => {
+      expect(wrapper.state('playerOneTurn')).toEqual(true);
+    });
+
+    it('initializes `boxes` state as an array of 9 Boxes', () => {
+      expect(wrapper.state('boxes').contains(<Box />));
+    });
   });
 
   describe('`handlePlayerMove()`', () => {
     it('changes `playerOneTurn` state to false', () => {
-      const event = { target: 'button' };
-      wrapper.instance().handlePlayerMove(event);
+      wrapper.instance().handlePlayerMove();
       expect(wrapper.state('playerOneTurn')).toEqual(false);
-    });
-
-    it('removes the event target, replacing it with an x', () => {
-      const event = { target: 'button' };
-      wrapper.instance().handlePlayerMove(event);
-      expect(event.target).toEqual('x');
     });
   });
 

@@ -12,7 +12,6 @@ class Wrapper extends Component {
 
   handlePlayerMove = event => {
     this.setState({ playerOneTurn: false });
-    // console.log(event.target);
   };
 
   render() {
