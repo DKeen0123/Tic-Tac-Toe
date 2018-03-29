@@ -21,19 +21,7 @@ ShallowWrapper {
         <Header />,
         <PlayerTurn />,
         <Arena
-          boxes={
-                    Array [
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                              <Box />,
-                            ]
-          }
+          boxes={Array []}
           handlePlayerMove={[Function]}
 />,
       ],
@@ -63,17 +51,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "boxes": Array [
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-            <Box />,
-          ],
+          "boxes": Array [],
           "handlePlayerMove": [Function],
         },
         "ref": null,
@@ -93,19 +71,7 @@ ShallowWrapper {
           <Header />,
           <PlayerTurn />,
           <Arena
-            boxes={
-                        Array [
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                    <Box />,
-                                  ]
-            }
+            boxes={Array []}
             handlePlayerMove={[Function]}
 />,
         ],
@@ -135,17 +101,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "boxes": Array [
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-              <Box />,
-            ],
+            "boxes": Array [],
             "handlePlayerMove": [Function],
           },
           "ref": null,

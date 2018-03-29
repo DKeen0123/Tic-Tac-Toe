@@ -10,18 +10,17 @@ class Wrapper extends Component {
 
     this.state = {
       playerOneTurn: true,
-      boxes: [
-        <Box />,
-        <Box />,
-        <Box />,
-        <Box />,
-        <Box />,
-        <Box />,
-        <Box />,
-        <Box />,
-        <Box />
-      ]
+      boxes: []
     };
+  }
+
+  populateBoxes(item = <Box />) {
+    let { boxes } = this.state;
+    for (var i = 0; i < 9; i++) {
+      boxes.push(item);
+    }
+
+    this.setState({ boxes });
   }
 
   handlePlayerMove = event => {

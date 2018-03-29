@@ -3,8 +3,11 @@ import { shallow } from 'enzyme';
 import Wrapper from '../../components/Wrapper';
 
 describe('Wrapper', () => {
-  let wrapper = shallow(<Wrapper />);
+  let wrapper;
 
+  beforeEach(() => {
+    wrapper = shallow(<Wrapper />);
+  });
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
@@ -22,17 +25,14 @@ describe('Wrapper', () => {
   });
 
   describe('populateBoxes()', () => {
-    it('populates boxes array with 9 of whatever is passed in', () => {
+    beforeEach(() => {
       wrapper.instance().populateBoxes('box');
+    });
+
+    it('populates boxes array with 9 of whatever is passed in', () => {
       expect(wrapper.state('boxes')).toContain('box');
     });
   });
-
-  // describe('componentDidMount', () = {
-  //   it('populates boxes array with 9 instances of Box', () => {
-  //
-  //   } )
-  // })
 
   describe('state', () => {
     it('initializes `playerOneTurn` state as true', () => {
