@@ -4,7 +4,8 @@ import Arena from '../../components/Arena';
 
 describe('Arena', () => {
   const mockHandlePlayerMove = jest.fn();
-  const props = { handlePlayerMove: mockHandlePlayerMove };
+  const mockBoxes = ['box', 'box'];
+  const props = { handlePlayerMove: mockHandlePlayerMove, boxes: mockBoxes };
   let arena = shallow(<Arena {...props} />);
 
   it('renders correctly', () => {
@@ -19,5 +20,9 @@ describe('Arena', () => {
     expect(arena.find('Box').prop('handlePlayerMove')).toEqual(
       mockHandlePlayerMove
     );
+  });
+
+  it('passes the boxes state down to Box', () => {
+    expect(arena.find('Box').prop('boxes')).toEqual(mockBoxes);
   });
 });

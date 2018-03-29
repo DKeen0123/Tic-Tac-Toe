@@ -5,6 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Arena
+    boxes={
+        Array [
+            "box",
+            "box",
+          ]
+    }
     handlePlayerMove={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -20,6 +26,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Box
+        boxes={
+                Array [
+                        "box",
+                        "box",
+                      ]
+        }
         handlePlayerMove={[Function]}
 />,
     },
@@ -29,6 +41,10 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "boxes": Array [
+          "box",
+          "box",
+        ],
         "handlePlayerMove": [Function],
       },
       "ref": null,
@@ -44,6 +60,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Box
+          boxes={
+                    Array [
+                              "box",
+                              "box",
+                            ]
+          }
           handlePlayerMove={[Function]}
 />,
       },
@@ -53,6 +75,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "boxes": Array [
+            "box",
+            "box",
+          ],
           "handlePlayerMove": [Function],
         },
         "ref": null,
