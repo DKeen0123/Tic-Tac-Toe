@@ -15,7 +15,7 @@ class Wrapper extends Component {
       <div>
         <Header />
         <PlayerTurn />
-        <Arena />
+        <Arena handlePlayerMove={this.handlePlayerMove} />
       </div>
     );
   }
