@@ -27,3 +27,5 @@ I then diagrammed out the first screen of the app, and split it into components 
 I decided to start with the Header, as I had already written a h1 within my already built App component, and could simply extract that out into its own component.
 
 Once this was done, I built a 'Smart' Wrapper container, which would hold the applications state.
+
+from here, I began TDD'ing the remaining components that the wrapper would hold, and the pieces of state that would affect them.
