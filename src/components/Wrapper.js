@@ -33,7 +33,10 @@ class Wrapper extends Component {
       <div>
         <Header />
         <PlayerTurn />
-        <Arena handlePlayerMove={this.handlePlayerMove} />
+        <Arena
+          handlePlayerMove={this.handlePlayerMove}
+          boxes={this.state.boxes}
+        />
       </div>
     );
   }
