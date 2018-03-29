@@ -3,7 +3,8 @@ import { shallow } from 'enzyme';
 import Arena from '../../components/Arena';
 
 describe('Arena', () => {
-  let arena = shallow(<Arena />);
+  const props = { handlePlayerMove: jest.fn() };
+  let arena = shallow(<Arena {...props} />);
 
   it('renders correctly', () => {
     expect(arena).toMatchSnapshot();
@@ -13,13 +14,7 @@ describe('Arena', () => {
     expect(arena.find('Box').exists()).toBe(true);
   });
 
-  describe('when a Box is clicked', () => {
-    it('fires the `handlePlayerMove()` function', () => {
-      const mockHandlePlayerMove = jest.fn();
-      const props = { handlePlayerMove: mockHandlePlayerMove };
-      arena = shallow(<Arena {...props} />);
-      arena.find('Box').simulate('click');
-      expect(mockHandlePlayerMove).toHaveBeenCalled();
-    });
+  it('passes `handlePlayerMove()` down to Box as props', () => {
+    expect(arena.find('Box').prop('handlePlayerMove')).toEqual(jest.fn());
   });
 });

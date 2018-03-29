@@ -4,7 +4,9 @@ exports[`Arena renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Arena />,
+  Symbol(enzyme.__unrendered__): <Arena
+    handlePlayerMove={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,7 +20,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Box
-        onClick={undefined}
+        onClick={[Function]}
 />,
     },
     "ref": null,
@@ -27,7 +29,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "onClick": undefined,
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": null,
@@ -42,7 +44,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Box
-          onClick={undefined}
+          onClick={[Function]}
 />,
       },
       "ref": null,
@@ -51,7 +53,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "onClick": undefined,
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": null,
