@@ -27,8 +27,15 @@ describe('Wrapper', () => {
 
   describe('`handlePlayerMove()`', () => {
     it('changes `playerOneTurn` state to false', () => {
-      wrapper.instance().handlePlayerMove();
+      const event = { target: 'button' };
+      wrapper.instance().handlePlayerMove(event);
       expect(wrapper.state('playerOneTurn')).toEqual(false);
+    });
+
+    it('removes the event target, replacing it with an x', () => {
+      const event = { target: 'button' };
+      wrapper.instance().handlePlayerMove(event);
+      expect(event.target).toEqual('x');
     });
   });
 
