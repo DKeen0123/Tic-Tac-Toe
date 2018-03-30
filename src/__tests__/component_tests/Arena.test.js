@@ -4,7 +4,7 @@ import Arena from '../../components/Arena';
 
 describe('Arena', () => {
   const mockHandlePlayerMove = jest.fn();
-  const mockBoxes = ['box', 'box'];
+  const mockBoxes = [<box />, <box />];
   const props = { handlePlayerMove: mockHandlePlayerMove, boxes: mockBoxes };
   let arena = shallow(<Arena {...props} />);
 

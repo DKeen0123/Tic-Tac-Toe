@@ -4,7 +4,9 @@ import Box from './Box';
 const Arena = props => {
   return (
     <div>
-      <Box boxes={props.boxes} />
+      {props.boxes.map(box => {
+        return box;
+      })}
     </div>
   );
 };
