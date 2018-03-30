@@ -12,7 +12,7 @@ describe('Arena', () => {
     expect(arena).toMatchSnapshot();
   });
 
-  it('renders a Box component', () => {
-    expect(arena.find('Box').exists()).toBe(true);
+  it('loops through boxes props and renders them', () => {
+    expect(arena.find('box').exists()).toBe(true);
   });
 });
