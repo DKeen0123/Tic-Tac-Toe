@@ -74,6 +74,11 @@ describe('Wrapper', () => {
       wrapper.setState({ playerOneTurn: true });
       expect(wrapper.instance().noughtOrCross()).toEqual('X');
     });
+
+    it('returns O if playerOneTurn is false', () => {
+      wrapper.setState({ playerOneTurn: false });
+      expect(wrapper.instance().noughtOrCross()).toEqual('O');
+    });
   });
 
   describe('passing props', () => {

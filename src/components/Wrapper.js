@@ -37,6 +37,10 @@ class Wrapper extends Component {
     this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
   };
 
+  noughtOrCross = () => {
+    return this.state.playerOneTurn === true ? 'X' : 'O';
+  };
+
   render() {
     return (
       <div>
