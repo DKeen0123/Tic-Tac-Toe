@@ -70,5 +70,9 @@ describe('Wrapper', () => {
     it('incriments counter', () => {
       expect(wrapper.state('counter')).toBe(2);
     });
+
+    it('returns counter -1', () => {
+      expect(wrapper.instance().iterate()).toEqual(2);
+    });
   });
 });

@@ -35,6 +35,8 @@ class Wrapper extends Component {
     let { counter } = this.state;
     counter++;
     this.setState({ counter });
+
+    return counter - 1;
   };
 
   render() {
