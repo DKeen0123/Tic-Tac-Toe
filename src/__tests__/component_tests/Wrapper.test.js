@@ -32,11 +32,15 @@ describe('Wrapper', () => {
 
   describe('state', () => {
     it('initializes `playerOneTurn` state as true', () => {
-      expect(wrapper.state('playerOneTurn')).toEqual(true);
+      expect(wrapper.state('playerOneTurn')).toBe(true);
     });
 
     it('initializes `boxes` state as an array of 9 Boxes', () => {
       expect(wrapper.state('boxes').length).toBe(9);
+    });
+
+    it('initializes `gameOver` state as false', () => {
+      expect(wrapper.state('gameOver')).toBe(false);
     });
   });
 
