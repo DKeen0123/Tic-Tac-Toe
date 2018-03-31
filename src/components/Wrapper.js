@@ -9,7 +9,8 @@ class Wrapper extends Component {
 
     this.state = {
       playerOneTurn: true,
-      boxes: []
+      boxes: [],
+      gameOver: false
     };
   }
   componentWillMount() {
