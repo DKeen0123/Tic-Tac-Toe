@@ -29,6 +29,7 @@ ShallowWrapper {
         <box />,
         <box />,
       ],
+      "className": "grid-container",
     },
     "ref": null,
     "rendered": Array [
@@ -63,6 +64,7 @@ ShallowWrapper {
           <box />,
           <box />,
         ],
+        "className": "grid-container",
       },
       "ref": null,
       "rendered": Array [

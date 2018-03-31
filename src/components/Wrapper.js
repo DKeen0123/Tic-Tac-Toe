@@ -22,7 +22,12 @@ class Wrapper extends Component {
 
     numbers.map(number =>
       boxes.push(
-        <button id={number} key={number} onClick={this.handlePlayerMove} />
+        <button
+          className="grid-item"
+          id={number}
+          key={number}
+          onClick={this.handlePlayerMove}
+        />
       )
     );
 
@@ -40,7 +45,11 @@ class Wrapper extends Component {
   };
 
   noughtOrCross = () => {
-    return this.state.playerOneTurn === true ? 'X' : 'O';
+    return this.state.playerOneTurn === true ? (
+      <p className="grid-item">X</p>
+    ) : (
+      <p className="grid-item">0</p>
+    );
   };
 
   render() {

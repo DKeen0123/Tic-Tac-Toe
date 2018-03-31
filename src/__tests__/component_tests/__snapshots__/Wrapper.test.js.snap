@@ -24,38 +24,47 @@ ShallowWrapper {
           boxes={
                     Array [
                               <button
+                                className="grid-item"
                                 id={0}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={1}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={2}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={3}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={4}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={5}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={6}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={7}
                                 onClick={[Function]}
                     />,
                               <button
+                                className="grid-item"
                                 id={8}
                                 onClick={[Function]}
                     />,
@@ -91,38 +100,47 @@ ShallowWrapper {
         "props": Object {
           "boxes": Array [
             <button
+              className="grid-item"
               id={0}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={1}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={2}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={3}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={4}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={5}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={6}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={7}
               onClick={[Function]}
 />,
             <button
+              className="grid-item"
               id={8}
               onClick={[Function]}
 />,
@@ -148,38 +166,47 @@ ShallowWrapper {
             boxes={
                         Array [
                                     <button
+                                      className="grid-item"
                                       id={0}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={1}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={2}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={3}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={4}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={5}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={6}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={7}
                                       onClick={[Function]}
                         />,
                                     <button
+                                      className="grid-item"
                                       id={8}
                                       onClick={[Function]}
                         />,
@@ -215,38 +242,47 @@ ShallowWrapper {
           "props": Object {
             "boxes": Array [
               <button
+                className="grid-item"
                 id={0}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={1}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={2}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={3}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={4}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={5}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={6}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={7}
                 onClick={[Function]}
 />,
               <button
+                className="grid-item"
                 id={8}
                 onClick={[Function]}
 />,

@@ -52,7 +52,9 @@ describe('Wrapper', () => {
       });
 
       it('replaces the corresponding clicked box with an `X`', () => {
-        expect(wrapper.state('boxes')[1]).toBe('X');
+        expect(wrapper.state('boxes')[1]).toEqual(
+          <p className="grid-item">X</p>
+        );
       });
     });
 
@@ -68,8 +70,10 @@ describe('Wrapper', () => {
         expect(wrapper.state('playerOneTurn')).toEqual(true);
       });
 
-      it('replaces the corresponding clicked box with an `X`', () => {
-        expect(wrapper.state('boxes')[2]).toBe('O');
+      it('replaces the corresponding clicked box with an `0`', () => {
+        expect(wrapper.state('boxes')[2]).toEqual(
+          <p className="grid-item">0</p>
+        );
       });
     });
   });
@@ -77,12 +81,16 @@ describe('Wrapper', () => {
   describe('noughtOrCross', () => {
     it('returns X if playerOneTurn is true', () => {
       wrapper.setState({ playerOneTurn: true });
-      expect(wrapper.instance().noughtOrCross()).toEqual('X');
+      expect(wrapper.instance().noughtOrCross()).toEqual(
+        <p className="grid-item">X</p>
+      );
     });
 
     it('returns O if playerOneTurn is false', () => {
       wrapper.setState({ playerOneTurn: false });
-      expect(wrapper.instance().noughtOrCross()).toEqual('O');
+      expect(wrapper.instance().noughtOrCross()).toEqual(
+        <p className="grid-item">0</p>
+      );
     });
   });
 

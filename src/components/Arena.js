@@ -2,7 +2,7 @@ import React from 'react';
 
 const Arena = props => {
   return (
-    <div>
+    <div className="grid-container">
       {props.boxes.map(box => {
         return box;
       })}
