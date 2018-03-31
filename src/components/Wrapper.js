@@ -22,7 +22,9 @@ class Wrapper extends Component {
     let numbers = Array.apply(null, { length: 9 }).map(Number.call, Number);
 
     numbers.map(number =>
-      boxes.push(<Box key={number} handlePlayerMove={this.handlePlayerMove} />)
+      boxes.push(
+        <Box key={number + 1} handlePlayerMove={this.handlePlayerMove} />
+      )
     );
 
     this.setState({ boxes });
