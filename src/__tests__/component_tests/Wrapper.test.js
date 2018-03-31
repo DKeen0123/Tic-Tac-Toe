@@ -57,7 +57,9 @@ describe('Wrapper', () => {
 
       it('replaces the corresponding clicked box with an `X`', () => {
         expect(wrapper.state('boxes')[1]).toEqual(
-          <p className="grid-item">X</p>
+          <p key="1" className="grid-item">
+            X
+          </p>
         );
       });
     });
@@ -76,7 +78,9 @@ describe('Wrapper', () => {
 
       it('replaces the corresponding clicked box with an `0`', () => {
         expect(wrapper.state('boxes')[2]).toEqual(
-          <p className="grid-item">0</p>
+          <p key="2" className="grid-item">
+            0
+          </p>
         );
       });
     });
