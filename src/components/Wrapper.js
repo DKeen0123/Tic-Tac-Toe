@@ -10,7 +10,8 @@ class Wrapper extends Component {
 
     this.state = {
       playerOneTurn: true,
-      boxes: []
+      boxes: [],
+      counter: 1
     };
   }
   componentWillMount() {
@@ -28,6 +29,12 @@ class Wrapper extends Component {
 
   handlePlayerMove = event => {
     this.setState({ playerOneTurn: false });
+  };
+
+  iterate = () => {
+    let { counter } = this.state;
+    counter++;
+    this.setState({ counter });
   };
 
   render() {
