@@ -23,7 +23,11 @@ class Wrapper extends Component {
 
     numbers.map(number =>
       boxes.push(
-        <Box key={number + 1} handlePlayerMove={this.handlePlayerMove} />
+        <Box
+          key={number}
+          id={number}
+          handlePlayerMove={this.handlePlayerMove}
+        />
       )
     );
 
@@ -40,7 +44,7 @@ class Wrapper extends Component {
       <div>
         <Header />
         <PlayerTurn />
-        <Arena boxes={this.state.boxes} iterate={this.iterate} />
+        <Arena boxes={this.state.boxes} />
       </div>
     );
   }

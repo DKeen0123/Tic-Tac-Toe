@@ -25,34 +25,42 @@ ShallowWrapper {
                     Array [
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={0}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={1}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={2}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={3}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={4}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={5}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={6}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={7}
                     />,
                               <Box
                                 handlePlayerMove={[Function]}
+                                id={8}
                     />,
                             ]
           }
-          iterate={undefined}
 />,
       ],
     },
@@ -84,33 +92,41 @@ ShallowWrapper {
           "boxes": Array [
             <Box
               handlePlayerMove={[Function]}
+              id={0}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={1}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={2}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={3}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={4}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={5}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={6}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={7}
 />,
             <Box
               handlePlayerMove={[Function]}
+              id={8}
 />,
           ],
-          "iterate": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -133,34 +149,42 @@ ShallowWrapper {
                         Array [
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={0}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={1}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={2}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={3}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={4}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={5}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={6}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={7}
                         />,
                                     <Box
                                       handlePlayerMove={[Function]}
+                                      id={8}
                         />,
                                   ]
             }
-            iterate={undefined}
 />,
         ],
       },
@@ -192,33 +216,41 @@ ShallowWrapper {
             "boxes": Array [
               <Box
                 handlePlayerMove={[Function]}
+                id={0}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={1}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={2}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={3}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={4}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={5}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={6}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={7}
 />,
               <Box
                 handlePlayerMove={[Function]}
+                id={8}
 />,
             ],
-            "iterate": undefined,
           },
           "ref": null,
           "rendered": null,
