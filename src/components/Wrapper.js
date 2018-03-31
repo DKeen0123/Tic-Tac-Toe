@@ -33,7 +33,7 @@ class Wrapper extends Component {
     let { playerOneTurn } = this.state;
     let { boxes } = this.state;
     let clickedBox = this.state.boxes[event.target.id];
-    let filteredBoxes = boxes.map(box => (box == clickedBox ? 'X' : box));
+    let filteredBoxes = boxes.map(box => (box === clickedBox ? 'X' : box));
     this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
   };
 

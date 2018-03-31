@@ -69,6 +69,13 @@ describe('Wrapper', () => {
     });
   });
 
+  describe('noughtOrCross', () => {
+    it('returns X if playerOneTurn is true', () => {
+      wrapper.setState({ playerOneTurn: true });
+      expect(wrapper.instance().noughtOrCross()).toEqual('X');
+    });
+  });
+
   describe('passing props', () => {
     it('passes the boxes state down to Arena', () => {
       expect(wrapper.find('Arena').prop('boxes')).toEqual(
