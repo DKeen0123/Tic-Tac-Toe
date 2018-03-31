@@ -10,19 +10,20 @@ class Wrapper extends Component {
 
     this.state = {
       playerOneTurn: true,
-      boxes: [],
-      counter: 1
+      boxes: []
     };
   }
   componentWillMount() {
     this.populateBoxes();
   }
 
-  populateBoxes(item = <Box handlePlayerMove={this.handlePlayerMove} />) {
+  populateBoxes() {
     let { boxes } = this.state;
-    for (var i = 0; i < 9; i++) {
-      boxes.push(item);
-    }
+    let numbers = Array.apply(null, { length: 9 }).map(Number.call, Number);
+
+    numbers.map(number =>
+      boxes.push(<Box key={number} handlePlayerMove={this.handlePlayerMove} />)
+    );
 
     this.setState({ boxes });
   }
@@ -31,20 +32,12 @@ class Wrapper extends Component {
     this.setState({ playerOneTurn: false });
   };
 
-  iterate = () => {
-    let { counter } = this.state;
-    counter++;
-    this.setState({ counter });
-
-    return counter - 1;
-  };
-
   render() {
     return (
       <div>
         <Header />
         <PlayerTurn />
-        <Arena boxes={this.state.boxes} />
+        <Arena boxes={this.state.boxes} iterate={this.iterate} />
       </div>
     );
   }

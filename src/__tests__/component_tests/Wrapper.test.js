@@ -25,12 +25,8 @@ describe('Wrapper', () => {
   });
 
   describe('populateBoxes()', () => {
-    beforeEach(() => {
-      wrapper.instance().populateBoxes('box');
-    });
-
-    it('populates boxes array with 9 of whatever is passed in', () => {
-      expect(wrapper.state('boxes')).toContain('box');
+    it('populates boxes array with 9 boxes', () => {
+      expect(wrapper.state('boxes').length).toBe(9);
     });
   });
 
@@ -41,10 +37,6 @@ describe('Wrapper', () => {
 
     it('initializes `boxes` state as an array of 9 Boxes', () => {
       expect(wrapper.state('boxes').length).toBe(9);
-    });
-
-    it('initializes `counter state as 1`', () => {
-      expect(wrapper.state('counter')).toBe(1);
     });
   });
 
@@ -60,19 +52,6 @@ describe('Wrapper', () => {
       expect(wrapper.find('Arena').prop('boxes')).toEqual(
         wrapper.state('boxes')
       );
-    });
-  });
-
-  describe('iterate()', () => {
-    beforeEach(() => {
-      wrapper.instance().iterate();
-    });
-    it('incriments counter', () => {
-      expect(wrapper.state('counter')).toBe(2);
-    });
-
-    it('returns counter -1', () => {
-      expect(wrapper.instance().iterate()).toEqual(2);
     });
   });
 });
