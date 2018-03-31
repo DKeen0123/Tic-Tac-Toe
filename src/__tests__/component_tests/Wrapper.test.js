@@ -44,13 +44,18 @@ describe('Wrapper', () => {
     beforeEach(() => {
       wrapper.instance().handlePlayerMove();
     });
-    it('changes `playerOneTurn` state to false if current state is true', () => {
-      expect(wrapper.state('playerOneTurn')).toEqual(false);
+
+    describe('when `playerOneTurn` is true', () => {
+      it('changes `playerOneTurn` state to false', () => {
+        expect(wrapper.state('playerOneTurn')).toEqual(false);
+      });
     });
 
-    it('changes `playerOneTurn` state to true if current state is false', () => {
-      wrapper.instance().handlePlayerMove();
-      expect(wrapper.state('playerOneTurn')).toEqual(true);
+    describe('when playerOneTurn is false', () => {
+      it('changes `playerOneTurn` state to true if current state is false', () => {
+        wrapper.instance().handlePlayerMove();
+        expect(wrapper.state('playerOneTurn')).toEqual(true);
+      });
     });
   });
 
