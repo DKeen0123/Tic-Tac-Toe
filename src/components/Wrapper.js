@@ -43,6 +43,7 @@ class Wrapper extends Component {
       box => (box === clickedBox ? this.noughtOrCross(event.target.id) : box)
     );
     this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
+    this.gameOver();
   };
 
   noughtOrCross = id => {
@@ -56,6 +57,17 @@ class Wrapper extends Component {
       </p>
     );
   };
+
+  gameOver() {
+    let { boxes } = this.state;
+    if (
+      boxes[0].props.children === 'X' &&
+      boxes[1].props.children === 'X' &&
+      boxes[2].props.children === 'X'
+    ) {
+      this.setState({ gameOver: true });
+    }
+  }
 
   render() {
     return (

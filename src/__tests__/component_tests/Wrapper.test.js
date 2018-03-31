@@ -106,7 +106,13 @@ describe('Wrapper', () => {
     describe('changes `gameOver` state to true when', () => {
       describe('is X or 0 on horizontals', () => {
         it('top horizontal of Xs', () => {
-          wrapper.setState({ boxes: ['X', 'X', 'X'] });
+          wrapper.setState({
+            boxes: [
+              { props: { children: 'X' } },
+              { props: { children: 'X' } },
+              { props: { children: 'X' } }
+            ]
+          });
           wrapper.instance().gameOver();
           expect(wrapper.state('gameOver')).toEqual(true);
         });
