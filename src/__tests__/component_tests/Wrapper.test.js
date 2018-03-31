@@ -102,6 +102,18 @@ describe('Wrapper', () => {
     });
   });
 
+  describe('gameOver()', () => {
+    describe('changes `gameOver` state to true when', () => {
+      describe('is X or 0 on horizontals', () => {
+        it('top horizontal of Xs', () => {
+          wrapper.setState({ boxes: ['X', 'X', 'X'] });
+          wrapper.instance().gameOver();
+          expect(wrapper.state('gameOver')).toEqual(true);
+        });
+      });
+    });
+  });
+
   describe('passing props', () => {
     it('passes the boxes state down to Arena', () => {
       expect(wrapper.find('Arena').prop('boxes')).toEqual(
