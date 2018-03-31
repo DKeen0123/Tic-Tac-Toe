@@ -43,7 +43,7 @@ describe('Wrapper', () => {
   describe('`handlePlayerMove()`', () => {
     describe('when `playerOneTurn` is true', () => {
       beforeEach(() => {
-        const event = { target: { key: 1 } };
+        const event = { target: { id: 1 } };
         wrapper.instance().handlePlayerMove(event);
       });
 
@@ -52,17 +52,18 @@ describe('Wrapper', () => {
       });
 
       it('replaces the corresponding clicked box with an `X`', () => {
-        expect(wrapper.state('boxes')[0]).toBe('X');
+        expect(wrapper.state('boxes')[1]).toBe('X');
       });
     });
 
     describe('when playerOneTurn is false', () => {
       beforeEach(() => {
-        wrapper.instance().handlePlayerMove();
+        const event = { target: { id: 1 } };
+        wrapper.instance().handlePlayerMove(event);
+        wrapper.instance().handlePlayerMove(event);
       });
 
       it('changes `playerOneTurn` state to true if current state is false', () => {
-        wrapper.instance().handlePlayerMove();
         expect(wrapper.state('playerOneTurn')).toEqual(true);
       });
     });

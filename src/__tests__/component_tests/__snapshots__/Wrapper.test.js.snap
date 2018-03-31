@@ -23,41 +23,41 @@ ShallowWrapper {
         <Arena
           boxes={
                     Array [
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={0}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={1}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={2}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={3}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={4}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={5}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={6}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={7}
+                                onClick={[Function]}
                     />,
-                              <Box
-                                handlePlayerMove={[Function]}
+                              <button
                                 id={8}
+                                onClick={[Function]}
                     />,
                             ]
           }
@@ -90,41 +90,41 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "boxes": Array [
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={0}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={1}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={2}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={3}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={4}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={5}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={6}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={7}
+              onClick={[Function]}
 />,
-            <Box
-              handlePlayerMove={[Function]}
+            <button
               id={8}
+              onClick={[Function]}
 />,
           ],
         },
@@ -147,41 +147,41 @@ ShallowWrapper {
           <Arena
             boxes={
                         Array [
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={0}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={1}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={2}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={3}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={4}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={5}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={6}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={7}
+                                      onClick={[Function]}
                         />,
-                                    <Box
-                                      handlePlayerMove={[Function]}
+                                    <button
                                       id={8}
+                                      onClick={[Function]}
                         />,
                                   ]
             }
@@ -214,41 +214,41 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "boxes": Array [
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={0}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={1}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={2}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={3}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={4}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={5}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={6}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={7}
+                onClick={[Function]}
 />,
-              <Box
-                handlePlayerMove={[Function]}
+              <button
                 id={8}
+                onClick={[Function]}
 />,
             ],
           },

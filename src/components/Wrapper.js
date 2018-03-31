@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import PlayerTurn from './PlayerTurn';
 import Arena from './Arena';
-import Box from './Box';
 
 class Wrapper extends Component {
   constructor() {
@@ -23,11 +22,7 @@ class Wrapper extends Component {
 
     numbers.map(number =>
       boxes.push(
-        <Box
-          key={number}
-          id={number}
-          handlePlayerMove={this.handlePlayerMove}
-        />
+        <button id={number} key={number} onClick={this.handlePlayerMove} />
       )
     );
 
@@ -36,7 +31,10 @@ class Wrapper extends Component {
 
   handlePlayerMove = event => {
     let { playerOneTurn } = this.state;
-    this.setState({ playerOneTurn: !playerOneTurn });
+    let { boxes } = this.state;
+    let clickedBox = this.state.boxes[event.target.id];
+    let filteredBoxes = boxes.map(box => (box == clickedBox ? 'X' : box));
+    this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
   };
 
   render() {
