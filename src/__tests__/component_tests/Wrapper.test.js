@@ -428,5 +428,11 @@ describe('Wrapper', () => {
         wrapper.state('boxes')
       );
     });
+
+    it('passes current player state down to the playerTurn component', () => {
+      expect(wrapper.find('playerTurn').prop('playerOneTurn')).toEqual(
+        wrapper.state('playerOneTurn')
+      );
+    });
   });
 });

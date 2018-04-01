@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import PlayerTurn from '../../components/PlayerTurn';
 
 describe('PlayerTurn', () => {
-  let props = { player: 'Player 1' };
+  let props = { playerOneTurn: true };
   let playerTurn = shallow(<PlayerTurn {...props} />);
 
   it('renders correctly', () => {
@@ -18,7 +18,7 @@ describe('PlayerTurn', () => {
 
   describe("player 2's turn", () => {
     it("states that it is player 2's turn", () => {
-      props = { player: 'Player 2' };
+      props = { playerOneTurn: false };
       playerTurn = shallow(<PlayerTurn {...props} />);
       expect(playerTurn.text()).toEqual("Player 2's turn!");
     });
