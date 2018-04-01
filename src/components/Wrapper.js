@@ -36,6 +36,7 @@ class Wrapper extends Component {
   }
 
   handlePlayerMove = event => {
+    this.gameOver();
     let { playerOneTurn } = this.state;
     let { boxes } = this.state;
     let clickedBox = this.state.boxes[event.target.id];
@@ -43,7 +44,6 @@ class Wrapper extends Component {
       box => (box === clickedBox ? this.noughtOrCross(event.target.id) : box)
     );
     this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
-    this.gameOver();
   };
 
   noughtOrCross = id => {
@@ -58,31 +58,46 @@ class Wrapper extends Component {
     );
   };
 
-  gameOver() {
-    let { boxes } = this.state;
+  topRow(boxes) {
     if (
       boxes[0].props.children === 'X' &&
       boxes[1].props.children === 'X' &&
       boxes[2].props.children === 'X'
     ) {
-      this.setState({ gameOver: true });
+      return true;
     }
+  }
 
+  midRow(boxes) {
     if (
       boxes[3].props.children === 'X' &&
       boxes[4].props.children === 'X' &&
       boxes[5].props.children === 'X'
     ) {
-      this.setState({ gameOver: true });
+      return true;
     }
+  }
 
+  bottomRow(boxes) {
     if (
       boxes[6].props.children === 'X' &&
       boxes[7].props.children === 'X' &&
       boxes[8].props.children === 'X'
     ) {
-      this.setState({ gameOver: true });
+      return true;
     }
+  }
+
+  crossCheck(boxes) {
+    if (this.topRow(boxes)) return true;
+    if (this.midRow(boxes)) return true;
+    if (this.bottomRow(boxes)) return true;
+  }
+
+  gameOver() {
+    let { boxes } = this.state;
+    console.log(this.crossCheck(boxes));
+    if (this.crossCheck(boxes)) this.setState({ gameOver: true });
   }
 
   render() {
