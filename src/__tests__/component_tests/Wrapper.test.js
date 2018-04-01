@@ -179,7 +179,7 @@ describe('Wrapper', () => {
         });
 
         describe('verticals', () => {
-          describe('first row', () => {
+          describe('first column', () => {
             it('is Xs', () => {
               wrapper.setState({
                 boxes: [
@@ -219,7 +219,7 @@ describe('Wrapper', () => {
             });
           });
 
-          describe('second row', () => {
+          describe('second column', () => {
             it('is Xs', () => {
               wrapper.setState({
                 boxes: [
@@ -254,6 +254,46 @@ describe('Wrapper', () => {
                 ]
               });
               const event = { target: { id: 8 } };
+              wrapper.instance().handlePlayerMove(event);
+              expect(wrapper.state('gameOver')).toEqual(true);
+            });
+          });
+
+          describe('end column', () => {
+            it('is Xs', () => {
+              wrapper.setState({
+                boxes: [
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } }
+                ]
+              });
+              const event = { target: { id: 1 } };
+              wrapper.instance().handlePlayerMove(event);
+              expect(wrapper.state('gameOver')).toEqual(true);
+            });
+
+            it('is 0s', () => {
+              wrapper.setState({
+                boxes: [
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } }
+                ]
+              });
+              const event = { target: { id: 1 } };
               wrapper.instance().handlePlayerMove(event);
               expect(wrapper.state('gameOver')).toEqual(true);
             });
