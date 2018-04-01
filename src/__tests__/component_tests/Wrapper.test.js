@@ -433,6 +433,21 @@ describe('Wrapper', () => {
     });
   });
 
+  describe('viewController()', () => {
+    describe('when gameOver is false', () => {
+      it('renders default view with no `Winner` component', () => {
+        expect(wrapper.find('Winner').exists()).toBe(false);
+      });
+    });
+
+    describe('when gameOver is true', () => {
+      it('renders gameOver view with a `Winner` component', () => {
+        wrapper.setState({ gameOver: true });
+        expect(wrapper.find('Winner').exists()).toBe(true);
+      });
+    });
+  });
+
   describe('passing props', () => {
     it('passes the boxes state down to Arena', () => {
       expect(wrapper.find('Arena').prop('boxes')).toEqual(
