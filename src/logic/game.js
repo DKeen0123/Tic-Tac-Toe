@@ -28,7 +28,7 @@ const bottomRow = boxes => {
   }
 };
 
-export const crossCheck = boxes => {
+export const winCheck = boxes => {
   if (topRow(boxes)) return true;
   if (midRow(boxes)) return true;
   if (bottomRow(boxes)) return true;

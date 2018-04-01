@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import PlayerTurn from './PlayerTurn';
 import Arena from './Arena';
-import { crossCheck } from '../logic/game';
+import { winCheck } from '../logic/game';
 
 class Wrapper extends Component {
   constructor() {
@@ -61,7 +61,7 @@ class Wrapper extends Component {
 
   gameOver() {
     let { boxes } = this.state;
-    if (crossCheck(boxes)) this.setState({ gameOver: true });
+    if (winCheck(boxes)) this.setState({ gameOver: true });
   }
 
   render() {
