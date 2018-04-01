@@ -20,7 +20,8 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <h1>
-        Player 1 wins!
+        Player 1
+         wins!
 </h1>,
     },
     "ref": null,
@@ -29,10 +30,16 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Player 1 wins!",
+        "children": Array [
+          "Player 1",
+          " wins!",
+        ],
       },
       "ref": null,
-      "rendered": "Player 1 wins!",
+      "rendered": Array [
+        "Player 1",
+        " wins!",
+      ],
       "type": "h1",
     },
     "type": "div",
@@ -44,7 +51,8 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <h1>
-          Player 1 wins!
+          Player 1
+           wins!
 </h1>,
       },
       "ref": null,
@@ -53,10 +61,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Player 1 wins!",
+          "children": Array [
+            "Player 1",
+            " wins!",
+          ],
         },
         "ref": null,
-        "rendered": "Player 1 wins!",
+        "rendered": Array [
+          "Player 1",
+          " wins!",
+        ],
         "type": "h1",
       },
       "type": "div",
