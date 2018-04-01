@@ -67,6 +67,14 @@ class Wrapper extends Component {
     ) {
       this.setState({ gameOver: true });
     }
+
+    if (
+      boxes[3].props.children === 'X' &&
+      boxes[4].props.children === 'X' &&
+      boxes[5].props.children === 'X'
+    ) {
+      this.setState({ gameOver: true });
+    }
   }
 
   render() {

@@ -62,6 +62,48 @@ describe('Wrapper', () => {
           </p>
         );
       });
+
+      describe('changes `gameOver` state to true when', () => {
+        describe('is X or 0 on horizontals', () => {
+          it('top horizontal of Xs', () => {
+            wrapper.setState({
+              boxes: [
+                { props: { children: 'X' } },
+                { props: { children: 'X' } },
+                { props: { children: 'X' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } }
+              ]
+            });
+            const event = { target: { id: 7 } };
+            wrapper.instance().handlePlayerMove(event);
+            expect(wrapper.state('gameOver')).toEqual(true);
+          });
+
+          it('middle horizontal of Xs', () => {
+            wrapper.setState({
+              boxes: [
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'X' } },
+                { props: { children: 'X' } },
+                { props: { children: 'X' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } }
+              ]
+            });
+            const event = { target: { id: 1 } };
+            wrapper.instance().handlePlayerMove(event);
+            expect(wrapper.state('gameOver')).toEqual(true);
+          });
+        });
+      });
     });
 
     describe('when playerOneTurn is false', () => {
@@ -99,24 +141,6 @@ describe('Wrapper', () => {
       expect(wrapper.instance().noughtOrCross()).toEqual(
         <p className="grid-item">0</p>
       );
-    });
-  });
-
-  describe('gameOver()', () => {
-    describe('changes `gameOver` state to true when', () => {
-      describe('is X or 0 on horizontals', () => {
-        it('top horizontal of Xs', () => {
-          wrapper.setState({
-            boxes: [
-              { props: { children: 'X' } },
-              { props: { children: 'X' } },
-              { props: { children: 'X' } }
-            ]
-          });
-          wrapper.instance().gameOver();
-          expect(wrapper.state('gameOver')).toEqual(true);
-        });
-      });
     });
   });
 
