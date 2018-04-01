@@ -433,7 +433,7 @@ describe('Wrapper', () => {
     });
   });
 
-  describe('viewController()', () => {
+  describe('winnerView()', () => {
     describe('when gameOver is false', () => {
       it('renders default view with no `Winner` component', () => {
         expect(wrapper.find('Winner').exists()).toBe(false);
@@ -441,9 +441,25 @@ describe('Wrapper', () => {
     });
 
     describe('when gameOver is true', () => {
-      it('renders gameOver view with a `Winner` component', () => {
+      beforeEach(() => {
         wrapper.setState({ gameOver: true });
+      });
+      it('renders gameOver view with a `Winner` component', () => {
         expect(wrapper.find('Winner').exists()).toBe(true);
+      });
+
+      it('passes winningPlayer props down to Winner component (player 2 wins)', () => {
+        wrapper.setState({ playerOneTurn: true });
+        expect(wrapper.find('Winner').prop('winningPlayer')).toEqual(
+          'player 2'
+        );
+      });
+
+      it('passes winningPlayer props down to Winner component (player 1 wins)', () => {
+        wrapper.setState({ playerOneTurn: false });
+        expect(wrapper.find('Winner').prop('winningPlayer')).toEqual(
+          'player 1'
+        );
       });
     });
   });
