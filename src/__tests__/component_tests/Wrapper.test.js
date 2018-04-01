@@ -198,6 +198,65 @@ describe('Wrapper', () => {
               wrapper.instance().handlePlayerMove(event);
               expect(wrapper.state('gameOver')).toEqual(true);
             });
+
+            it('is 0s', () => {
+              wrapper.setState({
+                boxes: [
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } }
+                ]
+              });
+              const event = { target: { id: 8 } };
+              wrapper.instance().handlePlayerMove(event);
+              expect(wrapper.state('gameOver')).toEqual(true);
+            });
+          });
+
+          describe('second row', () => {
+            it('is Xs', () => {
+              wrapper.setState({
+                boxes: [
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } },
+                  { props: { children: 'p' } }
+                ]
+              });
+              const event = { target: { id: 8 } };
+              wrapper.instance().handlePlayerMove(event);
+              expect(wrapper.state('gameOver')).toEqual(true);
+            });
+
+            it('is 0s', () => {
+              wrapper.setState({
+                boxes: [
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } }
+                ]
+              });
+              const event = { target: { id: 8 } };
+              wrapper.instance().handlePlayerMove(event);
+              expect(wrapper.state('gameOver')).toEqual(true);
+            });
           });
         });
       });
