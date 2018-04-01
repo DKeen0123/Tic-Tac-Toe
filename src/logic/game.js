@@ -28,6 +28,12 @@ const bottomRow = boxes => {
   }
 };
 
+const checkRows = boxes => {
+  if (topRow(boxes)) return true;
+  if (midRow(boxes)) return true;
+  if (bottomRow(boxes)) return true;
+};
+
 const firstColumn = boxes => {
   if (
     (boxes[0].props.children === 'X' || boxes[0].props.children === '0') &&
@@ -48,10 +54,23 @@ const middleColumn = boxes => {
   }
 };
 
-export const winCheck = boxes => {
-  if (topRow(boxes)) return true;
-  if (midRow(boxes)) return true;
-  if (bottomRow(boxes)) return true;
+const endColumn = boxes => {
+  if (
+    (boxes[2].props.children === 'X' || boxes[2].props.children === '0') &&
+    (boxes[5].props.children === 'X' || boxes[5].props.children === '0') &&
+    (boxes[8].props.children === 'X' || boxes[8].props.children === '0')
+  ) {
+    return true;
+  }
+};
+
+const checkColumns = boxes => {
   if (firstColumn(boxes)) return true;
   if (middleColumn(boxes)) return true;
+  if (endColumn(boxes)) return true;
+};
+
+export const winCheck = boxes => {
+  if (checkRows(boxes)) return true;
+  if (checkColumns(boxes)) return true;
 };
