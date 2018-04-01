@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import PlayerTurn from './PlayerTurn';
 import Arena from './Arena';
+import Winner from './Winner';
 import { winCheck } from '../logic/game';
 
 class Wrapper extends Component {
@@ -43,8 +44,8 @@ class Wrapper extends Component {
     let filteredBoxes = boxes.map(
       box => (box === clickedBox ? this.noughtOrCross(event.target.id) : box)
     );
-    this.gameOver();
     this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
+    this.gameOver(filteredBoxes);
   };
 
   noughtOrCross = id => {
@@ -59,9 +60,14 @@ class Wrapper extends Component {
     );
   };
 
-  gameOver() {
-    let { boxes } = this.state;
+  gameOver(boxes) {
     if (winCheck(boxes)) this.setState({ gameOver: true });
+  }
+
+  winnerView() {
+    if (this.state.gameOver) {
+      return <Winner />;
+    }
   }
 
   currentPlayer() {
@@ -74,6 +80,7 @@ class Wrapper extends Component {
         <Header />
         <PlayerTurn player={this.currentPlayer()} />
         <Arena boxes={this.state.boxes} />
+        {this.winnerView()}
       </div>
     );
   }

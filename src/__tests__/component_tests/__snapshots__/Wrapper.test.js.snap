@@ -73,6 +73,7 @@ ShallowWrapper {
                             ]
           }
 />,
+        undefined,
       ],
     },
     "ref": null,
@@ -154,6 +155,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      undefined,
     ],
     "type": "div",
   },
@@ -219,6 +221,7 @@ ShallowWrapper {
                                   ]
             }
 />,
+          undefined,
         ],
       },
       "ref": null,
@@ -300,6 +303,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        undefined,
       ],
       "type": "div",
     },
