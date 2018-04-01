@@ -70,7 +70,22 @@ const checkColumns = boxes => {
   if (endColumn(boxes)) return true;
 };
 
+const leftDiagnonal = boxes => {
+  if (
+    (boxes[0].props.children === 'X' || boxes[0].props.children === '0') &&
+    (boxes[4].props.children === 'X' || boxes[4].props.children === '0') &&
+    (boxes[8].props.children === 'X' || boxes[8].props.children === '0')
+  ) {
+    return true;
+  }
+};
+
+const checkDiagonals = boxes => {
+  if (leftDiagnonal(boxes)) return true;
+};
+
 export const winCheck = boxes => {
   if (checkRows(boxes)) return true;
   if (checkColumns(boxes)) return true;
+  if (checkDiagonals(boxes)) return true;
 };
