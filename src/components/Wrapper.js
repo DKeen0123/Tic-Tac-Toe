@@ -64,9 +64,13 @@ class Wrapper extends Component {
     if (winCheck(boxes)) this.setState({ gameOver: true });
   }
 
+  winningPlayer() {
+    return this.state.playerOneTurn ? 'Player 2' : 'Player 1';
+  }
+
   winnerView() {
     if (this.state.gameOver) {
-      return <Winner />;
+      return <Winner winningPlayer={this.winningPlayer()} />;
     }
   }
 

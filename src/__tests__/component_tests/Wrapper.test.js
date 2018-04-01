@@ -451,14 +451,14 @@ describe('Wrapper', () => {
       it('passes winningPlayer props down to Winner component (player 2 wins)', () => {
         wrapper.setState({ playerOneTurn: true });
         expect(wrapper.find('Winner').prop('winningPlayer')).toEqual(
-          'player 2'
+          'Player 2'
         );
       });
 
       it('passes winningPlayer props down to Winner component (player 1 wins)', () => {
         wrapper.setState({ playerOneTurn: false });
         expect(wrapper.find('Winner').prop('winningPlayer')).toEqual(
-          'player 1'
+          'Player 1'
         );
       });
     });
