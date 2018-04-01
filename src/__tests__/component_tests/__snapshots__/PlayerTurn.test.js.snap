@@ -4,7 +4,9 @@ exports[`PlayerTurn renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PlayerTurn />,
+  Symbol(enzyme.__unrendered__): <PlayerTurn
+    player="Player 1"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

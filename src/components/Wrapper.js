@@ -37,7 +37,6 @@ class Wrapper extends Component {
   }
 
   handlePlayerMove = event => {
-    this.gameOver();
     let { playerOneTurn } = this.state;
     let { boxes } = this.state;
     let clickedBox = this.state.boxes[event.target.id];
@@ -45,6 +44,7 @@ class Wrapper extends Component {
       box => (box === clickedBox ? this.noughtOrCross(event.target.id) : box)
     );
     this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
+    this.gameOver();
   };
 
   noughtOrCross = id => {
