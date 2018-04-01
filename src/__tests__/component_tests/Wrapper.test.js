@@ -63,8 +63,8 @@ describe('Wrapper', () => {
         );
       });
 
-      describe('changes `gameOver` state to true when', () => {
-        describe('is X or 0 on horizontals', () => {
+      describe('changes `gameOver` state to true when X', () => {
+        describe('horizontals', () => {
           it('top horizontal of Xs', () => {
             wrapper.setState({
               boxes: [
@@ -102,24 +102,24 @@ describe('Wrapper', () => {
             wrapper.instance().handlePlayerMove(event);
             expect(wrapper.state('gameOver')).toEqual(true);
           });
-        });
-        it('bottom horizontal of Xs', () => {
-          wrapper.setState({
-            boxes: [
-              { props: { children: 'p' } },
-              { props: { children: 'p' } },
-              { props: { children: 'p' } },
-              { props: { children: 'p' } },
-              { props: { children: 'p' } },
-              { props: { children: 'p' } },
-              { props: { children: 'X' } },
-              { props: { children: 'X' } },
-              { props: { children: 'X' } }
-            ]
+          it('bottom horizontal of Xs', () => {
+            wrapper.setState({
+              boxes: [
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'p' } },
+                { props: { children: 'X' } },
+                { props: { children: 'X' } },
+                { props: { children: 'X' } }
+              ]
+            });
+            const event = { target: { id: 1 } };
+            wrapper.instance().handlePlayerMove(event);
+            expect(wrapper.state('gameOver')).toEqual(true);
           });
-          const event = { target: { id: 1 } };
-          wrapper.instance().handlePlayerMove(event);
-          expect(wrapper.state('gameOver')).toEqual(true);
         });
       });
     });
