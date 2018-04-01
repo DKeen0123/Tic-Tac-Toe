@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PlayerTurn = () => {
+const PlayerTurn = props => {
   return (
     <div>
-      <h3>Player 1's turn!</h3>
+      <h3>{props.player}'s turn!</h3>
     </div>
   );
 };

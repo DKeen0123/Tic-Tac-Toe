@@ -64,11 +64,15 @@ class Wrapper extends Component {
     if (winCheck(boxes)) this.setState({ gameOver: true });
   }
 
+  currentPlayer() {
+    return this.state.playerOneTurn ? 'Player 1' : 'Player 2';
+  }
+
   render() {
     return (
       <div>
         <Header />
-        <PlayerTurn />
+        <PlayerTurn player={this.currentPlayer()} />
         <Arena boxes={this.state.boxes} />
       </div>
     );

@@ -19,7 +19,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header />,
-        <PlayerTurn />,
+        <PlayerTurn
+          player="Player 1"
+/>,
         <Arena
           boxes={
                     Array [
@@ -88,7 +90,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "player": "Player 1",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -161,7 +165,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header />,
-          <PlayerTurn />,
+          <PlayerTurn
+            player="Player 1"
+/>,
           <Arena
             boxes={
                         Array [
@@ -230,7 +236,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "player": "Player 1",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

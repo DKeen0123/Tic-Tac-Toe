@@ -422,6 +422,17 @@ describe('Wrapper', () => {
     });
   });
 
+  describe('currentPlayer()', () => {
+    it('returns player one if player ones turn', () => {
+      expect(wrapper.instance().currentPlayer()).toEqual('Player 1');
+    });
+
+    it('returns player two if player twos turn', () => {
+      wrapper.setState({ playerOneTurn: false });
+      expect(wrapper.instance().currentPlayer()).toEqual('Player 2');
+    });
+  });
+
   describe('passing props', () => {
     it('passes the boxes state down to Arena', () => {
       expect(wrapper.find('Arena').prop('boxes')).toEqual(
@@ -430,8 +441,8 @@ describe('Wrapper', () => {
     });
 
     it('passes current player state down to the playerTurn component', () => {
-      expect(wrapper.find('playerTurn').prop('playerOneTurn')).toEqual(
-        wrapper.state('playerOneTurn')
+      expect(wrapper.find('PlayerTurn').prop('player')).toEqual(
+        wrapper.instance().currentPlayer()
       );
     });
   });
