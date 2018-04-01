@@ -1,8 +1,16 @@
 const topRow = boxes => {
   if (
-    (boxes[0].props.children === 'X' || boxes[0].props.children === '0') &&
-    (boxes[1].props.children === 'X' || boxes[1].props.children === '0') &&
-    (boxes[2].props.children === 'X' || boxes[2].props.children === '0')
+    boxes[0].props.children === 'X' &&
+    boxes[1].props.children === 'X' &&
+    boxes[2].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[0].props.children === '0' &&
+    boxes[1].props.children === '0' &&
+    boxes[2].props.children === '0'
   ) {
     return true;
   }
@@ -10,9 +18,17 @@ const topRow = boxes => {
 
 const midRow = boxes => {
   if (
-    (boxes[3].props.children === 'X' || boxes[3].props.children === '0') &&
-    (boxes[4].props.children === 'X' || boxes[4].props.children === '0') &&
-    (boxes[5].props.children === 'X' || boxes[5].props.children === '0')
+    boxes[3].props.children === 'X' &&
+    boxes[4].props.children === 'X' &&
+    boxes[5].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[3].props.children === '0' &&
+    boxes[4].props.children === '0' &&
+    boxes[5].props.children === '0'
   ) {
     return true;
   }
@@ -20,9 +36,17 @@ const midRow = boxes => {
 
 const bottomRow = boxes => {
   if (
-    (boxes[6].props.children === 'X' || boxes[6].props.children === '0') &&
-    (boxes[7].props.children === 'X' || boxes[7].props.children === '0') &&
-    (boxes[8].props.children === 'X' || boxes[8].props.children === '0')
+    boxes[6].props.children === 'X' &&
+    boxes[7].props.children === 'X' &&
+    boxes[8].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[6].props.children === '0' &&
+    boxes[7].props.children === '0' &&
+    boxes[8].props.children === '0'
   ) {
     return true;
   }
@@ -36,9 +60,17 @@ const checkRows = boxes => {
 
 const firstColumn = boxes => {
   if (
-    (boxes[0].props.children === 'X' || boxes[0].props.children === '0') &&
-    (boxes[3].props.children === 'X' || boxes[3].props.children === '0') &&
-    (boxes[6].props.children === 'X' || boxes[6].props.children === '0')
+    boxes[0].props.children === 'X' &&
+    boxes[3].props.children === 'X' &&
+    boxes[6].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[0].props.children === '0' &&
+    boxes[3].props.children === '0' &&
+    boxes[6].props.children === '0'
   ) {
     return true;
   }
@@ -46,9 +78,17 @@ const firstColumn = boxes => {
 
 const middleColumn = boxes => {
   if (
-    (boxes[1].props.children === 'X' || boxes[1].props.children === '0') &&
-    (boxes[4].props.children === 'X' || boxes[4].props.children === '0') &&
-    (boxes[7].props.children === 'X' || boxes[7].props.children === '0')
+    boxes[1].props.children === 'X' &&
+    boxes[4].props.children === 'X' &&
+    boxes[7].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[1].props.children === '0' &&
+    boxes[4].props.children === '0' &&
+    boxes[7].props.children === '0'
   ) {
     return true;
   }
@@ -56,9 +96,17 @@ const middleColumn = boxes => {
 
 const endColumn = boxes => {
   if (
-    (boxes[2].props.children === 'X' || boxes[2].props.children === '0') &&
-    (boxes[5].props.children === 'X' || boxes[5].props.children === '0') &&
-    (boxes[8].props.children === 'X' || boxes[8].props.children === '0')
+    boxes[2].props.children === 'X' &&
+    boxes[5].props.children === 'X' &&
+    boxes[8].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[2].props.children === '0' &&
+    boxes[5].props.children === '0' &&
+    boxes[8].props.children === '0'
   ) {
     return true;
   }
@@ -72,9 +120,17 @@ const checkColumns = boxes => {
 
 const leftDiagnonal = boxes => {
   if (
-    (boxes[0].props.children === 'X' || boxes[0].props.children === '0') &&
-    (boxes[4].props.children === 'X' || boxes[4].props.children === '0') &&
-    (boxes[8].props.children === 'X' || boxes[8].props.children === '0')
+    boxes[0].props.children === 'X' &&
+    boxes[4].props.children === 'X' &&
+    boxes[8].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[0].props.children === '0' &&
+    boxes[4].props.children === '0' &&
+    boxes[8].props.children === '0'
   ) {
     return true;
   }
@@ -82,9 +138,17 @@ const leftDiagnonal = boxes => {
 
 const rightDiagnonal = boxes => {
   if (
-    (boxes[2].props.children === 'X' || boxes[2].props.children === '0') &&
-    (boxes[4].props.children === 'X' || boxes[4].props.children === '0') &&
-    (boxes[6].props.children === 'X' || boxes[6].props.children === '0')
+    boxes[2].props.children === 'X' &&
+    boxes[4].props.children === 'X' &&
+    boxes[6].props.children === 'X'
+  ) {
+    return true;
+  }
+
+  if (
+    boxes[2].props.children === '0' &&
+    boxes[4].props.children === '0' &&
+    boxes[6].props.children === '0'
   ) {
     return true;
   }
