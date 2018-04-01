@@ -103,6 +103,24 @@ describe('Wrapper', () => {
             expect(wrapper.state('gameOver')).toEqual(true);
           });
         });
+        it('bottom horizontal of Xs', () => {
+          wrapper.setState({
+            boxes: [
+              { props: { children: 'p' } },
+              { props: { children: 'p' } },
+              { props: { children: 'p' } },
+              { props: { children: 'p' } },
+              { props: { children: 'p' } },
+              { props: { children: 'p' } },
+              { props: { children: 'X' } },
+              { props: { children: 'X' } },
+              { props: { children: 'X' } }
+            ]
+          });
+          const event = { target: { id: 1 } };
+          wrapper.instance().handlePlayerMove(event);
+          expect(wrapper.state('gameOver')).toEqual(true);
+        });
       });
     });
 
