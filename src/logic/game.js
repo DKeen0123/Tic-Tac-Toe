@@ -28,8 +28,19 @@ const bottomRow = boxes => {
   }
 };
 
+const firstColumn = boxes => {
+  if (
+    (boxes[0].props.children === 'X' || boxes[0].props.children === '0') &&
+    (boxes[3].props.children === 'X' || boxes[3].props.children === '0') &&
+    (boxes[6].props.children === 'X' || boxes[6].props.children === '0')
+  ) {
+    return true;
+  }
+};
+
 export const winCheck = boxes => {
   if (topRow(boxes)) return true;
   if (midRow(boxes)) return true;
   if (bottomRow(boxes)) return true;
+  if (firstColumn(boxes)) return true;
 };
