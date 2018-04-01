@@ -41,3 +41,11 @@ Once the basic components were built out (without much state or functionality), 
 * A player wins if they claim all the fields in a row, column or diagonal
 * A game is over if a player wins
 * A game is over when all fields are taken
+
+in order to make the turn switch, a piece of state called `playerOneTurn` is originally set to true, and switches to false when the player interacts with the board.
+
+In order to visually see the effect of player interaction, I decided to hold 9 elements (representing the 9 squares on the tic-tac-toe board) in a piece of state in an array. This array was mapped over in Arena and rendered on the screen. Because the array is held in state, whenever the array was updated, the component was re-rendered. Knowing this, I would simply replace the clicked area with a nought or cross on a player interaction and it would instantly re-render the component and update the UI.
+
+### Struggles
+
+My main struggle was how and where to hold the business logic - that being the game over logic. Holding it all in the wrapper component was making the component way to large, so I decided to extract the functions into separate files and import them in when needed.
