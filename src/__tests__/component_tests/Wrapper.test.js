@@ -299,6 +299,48 @@ describe('Wrapper', () => {
             });
           });
         });
+
+        describe('diagonals', () => {
+          describe('left to right', () => {
+            it('is Xs', () => {
+              wrapper.setState({
+                boxes: [
+                  { props: { children: 'X' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'X' } }
+                ]
+              });
+              const event = { target: { id: 1 } };
+              wrapper.instance().handlePlayerMove(event);
+              expect(wrapper.state('gameOver')).toEqual(true);
+            });
+
+            it('is 0s', () => {
+              wrapper.setState({
+                boxes: [
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: 'p' } },
+                  { props: { children: '0' } }
+                ]
+              });
+              const event = { target: { id: 1 } };
+              wrapper.instance().handlePlayerMove(event);
+              expect(wrapper.state('gameOver')).toEqual(true);
+            });
+          });
+        });
       });
     });
 
