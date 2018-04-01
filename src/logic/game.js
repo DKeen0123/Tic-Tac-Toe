@@ -80,8 +80,19 @@ const leftDiagnonal = boxes => {
   }
 };
 
+const rightDiagnonal = boxes => {
+  if (
+    (boxes[2].props.children === 'X' || boxes[2].props.children === '0') &&
+    (boxes[4].props.children === 'X' || boxes[4].props.children === '0') &&
+    (boxes[6].props.children === 'X' || boxes[6].props.children === '0')
+  ) {
+    return true;
+  }
+};
+
 const checkDiagonals = boxes => {
   if (leftDiagnonal(boxes)) return true;
+  if (rightDiagnonal(boxes)) return true;
 };
 
 export const winCheck = boxes => {
