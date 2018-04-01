@@ -433,6 +433,13 @@ describe('Wrapper', () => {
     });
   });
 
+  describe('winner()', () => {
+    it('displays a Winner component', () => {
+      wrapper.instance().winner();
+      expect(wrapper.find('Winner').exists()).toBe(true);
+    });
+  });
+
   describe('passing props', () => {
     it('passes the boxes state down to Arena', () => {
       expect(wrapper.find('Arena').prop('boxes')).toEqual(

@@ -43,8 +43,8 @@ class Wrapper extends Component {
     let filteredBoxes = boxes.map(
       box => (box === clickedBox ? this.noughtOrCross(event.target.id) : box)
     );
-    this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
     this.gameOver();
+    this.setState({ playerOneTurn: !playerOneTurn, boxes: filteredBoxes });
   };
 
   noughtOrCross = id => {
