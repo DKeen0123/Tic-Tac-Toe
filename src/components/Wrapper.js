@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import PlayerTurn from './PlayerTurn';
 import Arena from './Arena';
+import Winner from './Winner';
 import { winCheck } from '../logic/game';
 
 class Wrapper extends Component {
